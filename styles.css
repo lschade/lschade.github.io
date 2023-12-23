@@ -15,7 +15,7 @@
 }
 
 .projects {
-  font-size: 20pt;
+  font-size: 30pt;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -25,6 +25,7 @@
 
   ul {
     list-style-type: none;
+    role: list;
   }
 }
 
@@ -80,6 +81,7 @@ footer {
 .job-title {
   font-weight: bold;
   margin-bottom: 10pt !important;
+  color: #ffc1bb;
 }
 
 .school {
