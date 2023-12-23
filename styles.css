@@ -1,0 +1,93 @@
+.header {
+  text-align: center;
+}
+
+.capital-letter {
+  font-size: 50pt;
+}
+
+.lower-letter {
+  font-size: 35pt;
+}
+
+.fs-2 {
+  font-size: 20pt;
+}
+
+.projects {
+  font-size: 20pt;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  div {
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+li {
+  margin-bottom: 20pt;
+}
+
+.filler {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
+
+a {
+  color: #3498db;
+}
+
+a:visited {
+  color: #2e75b5;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20pt;
+}
+
+.name {
+  color: #e74c3c;
+}
+
+.job-title {
+  font-weight: bold;
+  margin-bottom: 10pt !important;
+}
+
+.school {
+  font-weight: bold;
+}
+
+.job {
+  p {
+    margin: 5pt;
+  }
+}
