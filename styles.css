@@ -3,29 +3,28 @@
 }
 
 .capital-letter {
-  font-size: 50pt;
+  font-size: 6rem;
 }
 
 .lower-letter {
-  font-size: 35pt;
+  font-size: 4rem;
 }
 
 .fs-2 {
-  font-size: 20pt;
+  font-size: 1.2rem;
 }
 
 .projects {
-  font-size: 30pt;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   div {
     width: 100%;
   }
 
   ul {
-    list-style-type: none;
-    role: list;
+    margin-top: 0;
   }
 }
 
@@ -51,6 +50,10 @@ body {
 .content {
   flex: 1;
   overflow: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-self: center;
+  width: 90%;
 }
 
 body {
@@ -92,4 +95,8 @@ footer {
   p {
     margin: 5pt;
   }
+}
+
+.divider {
+  margin: 30 10 30 10;
 }
