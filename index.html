@@ -1,6 +1,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="toggle.css" />
+    <link id="stylesheet" rel="stylesheet" href="styles-light.css" />
     <title>Lukas Schade</title>
   </head>
   <body>
@@ -53,12 +55,42 @@
           </div>
         </div>
       </div>
+      <hr class="divider" />
 
       <footer class="footer">
-        <hr class="divider" />
-        Copyright © 2023 Lukas Schade &#x2022;
-        <a href="mailto:mailo@luuuke.de">mailo@luuuke.de</a>
+        <div style="width: 70px"></div>
+        <div class="footer-content">
+          <p>Copyright © 2023 Lukas Schade</p>
+          <p>&#x2022;</p>
+          <a href="mailto:mailo@luuuke.de">mailo@luuuke.de</a>
+        </div>
+
+        <div class="toggle-container">
+          <input type="checkbox" id="toggle" class="toggle-input" />
+          <label for="toggle" class="toggle-label">
+            <div class="toggle-indicator"></div>
+          </label>
+        </div>
       </footer>
     </div>
+
+    <script>
+      function toggleDarkMode() {
+        const stylesheet = document.getElementById("stylesheet");
+        if (stylesheet.href.includes("styles-light.css")) {
+          stylesheet.href = "styles-dark.css";
+        } else {
+          stylesheet.href = "styles-light.css";
+        }
+      }
+
+      const toggleInput = document.getElementById("toggle");
+      toggleInput.addEventListener("change", function () {
+        console.log("toggle");
+        toggleDarkMode();
+      });
+
+      // Function to toggle between dark and light mode
+    </script>
   </body>
 </html>

@@ -60,31 +60,25 @@ body {
   display: flex;
   flex-flow: column;
   height: 100%;
-  color: #ffffff;
-  background-color: #1a1a1a;
-}
-
-a {
-  color: #3498db;
-}
-
-a:visited {
-  color: #2e75b5;
 }
 
 footer {
   text-align: center;
   padding-bottom: 20pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.name {
-  color: #e74c3c;
-}
-
-.job-title {
-  font-weight: bold;
-  margin-bottom: 10pt !important;
-  color: #ffc1bb;
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  > * {
+    margin: 0 10px;
+  }
 }
 
 .school {

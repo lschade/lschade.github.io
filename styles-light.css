@@ -1,0 +1,24 @@
+:root {
+  --background-color: #f4f4f4; /* Light gray for background */
+  --text-color: #000080; /* Dark gray for text */
+  --headline-color: #000058; /* Dark color for headlines */
+  --link-color: #0077cc; /* Blue for links */
+  --visited-link-color: #551a8b; /* Purple for visited links */
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-link-color);
+}
+
+.name {
+  color: var(--headline-color);
+}

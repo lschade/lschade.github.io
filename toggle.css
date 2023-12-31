@@ -1,0 +1,51 @@
+.toggle-container {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 14px;
+  background: linear-gradient(to right, #b3e0ff, #99c2ff);
+  border-radius: 17px;
+  position: relative;
+  cursor: pointer;
+  padding: 0px;
+  transition: background 0.3s;
+}
+
+.toggle-indicator {
+  width: 26px;
+  height: 26px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-left: 0px;
+  transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-label .toggle-indicator {
+  transform: translateX(26px);
+}
+
+.toggle-label-text {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+:root {
+  --primary-color: #2196f3; /* Material Design Blue */
+  --accent-color: #ff4081; /* Material Design Pink */
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
